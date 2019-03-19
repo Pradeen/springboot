@@ -4,5 +4,5 @@ ENV M2_HOME /var/maven_home
 RUN mvn clean
 RUN mvn install
 ADD target/docker-spring-boot.jar . 
-EXPOSE 8085
+EXPOSE 8086
 ENTRYPOINT ["java","-jar","docker-spring-boot.jar"]
